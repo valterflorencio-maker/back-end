@@ -15,3 +15,23 @@ print('Prazer em conhece-lo {:20}!'.format(nome))
 # Qual é o seu nome? Gustavo
 # Prazer em conhece-lo Gustavo       !
 # O espaço adicional após "Gustavo" completa os 20 caracteres reservados
+
+
+#Podemos alinhar o nome dentro do número de caracteres que desejamos
+
+#Alinhamento para direita
+
+#Alinhamento para a esquerda
+
+#Alinhamento no centro
+
+#Exemplos de código mostrados na imagem:
+
+nome = input('Qual é o seu nome?')
+print('prazer em conhece-lo {:>20}!'.format(nome))  # alinhamento à direita
+
+nome = input('Qual é o seu nome?')
+print('prazer em conhece-lo {:<20}!'.format(nome))  # alinhamento à esquerda
+
+nome = input('Qual é o seu nome?')
+print('prazer em conhece-lo {:^20}!'.format(nome))  # alinhamento central
