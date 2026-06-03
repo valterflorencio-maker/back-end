@@ -1,15 +1,15 @@
-from datetime import date
+print("-=-" * 10)
+print("Analisador de triângulos")
+print("-=-" * 10)
+a = float(input("Primeiro segmento "))
+b = float(input("Segundo segmento "))
+c = float(input("Terceiro segmento "))
 
-ano = int(input("Digite o ano que você nasceu: "))
-idade = date.today().year - ano
-
-if idade <= 9:
-    print("Mirim")
-elif idade <= 14:
-    print("Infantil")
-elif idade <= 19:
-    print("Junior")
-elif idade <= 20:
-    print("Sênior")
+if a<b+c and b<a+c and c<a+b and a== b == c:
+    print("Os segmentos acima podem formar um triangulo Equilatero")
+elif a<b+c and b<a+c and c<a+b and a== b or a== c or b==c:
+    print("Os segmentos acima podem formar um triangulo Isósceles")
+elif a<b+c and b<a+c and c<a+b and a!= b and a!= c and b!=c:
+    print("Os segmentos acima podem formar um triangulo Escaleno")
 else:
-    print("Master")
+    print("Os segmentos acima NÃO PODEM FORMAR um triângulo")
